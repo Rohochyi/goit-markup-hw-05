@@ -113,6 +113,17 @@ ul {
   color: var(--brand-color);
 }
 
+.current::after {
+  position: relative;
+  content: "";
+  display: block;
+  width: auto;
+  height: 4px;
+  background-color: var(--click-color);
+  border-radius: 2px;
+  ;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
