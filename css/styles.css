@@ -13,6 +13,7 @@
   --acent-color: #e7e9fc;
   --click-color: #404bbf;
   --modal-color: #fcfcfc;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -100,6 +101,8 @@ ul {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .header-link:hover,
@@ -117,7 +120,7 @@ ul {
 .link.current::after {
   content: "";
   position: absolute;
-  left: 0;
+  /* left: 0; */
   bottom: -1px;
   display: block;
   width: 100%;
@@ -159,6 +162,8 @@ ul {
   color: var(--text-color);
   padding-bottom: 24px;
   padding-top: 24px;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .hero {
@@ -209,6 +214,9 @@ ul {
   min-height: 56px;
   border-radius: 4px;
   border: 1px solid transparent;
+
+  transition: background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .hero-btn:hover,
@@ -356,6 +364,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .soc-link:hover,
@@ -389,6 +399,7 @@ ul {
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .customers-link {
@@ -401,6 +412,7 @@ ul {
 
 .company-icom {
   fill: #8e8f99;
+  transition: fill 250ms var(--timing-function);
 }
 
 .customers-item:hover,
@@ -438,12 +450,17 @@ ul {
   background: var(--lith-color);
   border: 1px solid var(--acent-color);
   cursor: pointer;
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function));
+  box-shadow: 250ms var(--timing-function);
 }
 
 .btn:hover,
 .btn:focus {
   color: var(--second-color);
-  background: var(--click-color);
+  background-color: var(--click-color);
   border-color: var(--click-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -464,6 +481,8 @@ ul {
 .portfolio-link {
   width: auto;
   height: auto;
+
+  transition: box-shadow 250ms var(--timing-function);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -551,6 +570,8 @@ ul {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-soc-link:hover,
@@ -605,4 +626,8 @@ ul {
   width: 8px;
   height: 8px;
   background: var(--acent-color);
+}
+
+.icon-vector:hover {
+  background-color: #31d0aa;
 }
