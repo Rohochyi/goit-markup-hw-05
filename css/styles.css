@@ -473,12 +473,14 @@ ul {
 }
 
 .portfolio-item {
+  position: relative;
   width: 360px;
   border: 1px solid var(--acent-color);
   margin-bottom: 48px;
 }
 
 .portfolio-link {
+  position: relative;
   width: auto;
   height: auto;
 
@@ -495,7 +497,21 @@ ul {
 
 .portfolio-picture {
   margin-bottom: 32px;
+  position: relative;
 }
+/* 
+.portfolio-link::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+transform: translateY(-100%);
+opacity: 1 ;
+} */
 
 .portfolio-title {
   font-weight: 500;
@@ -586,6 +602,7 @@ ul {
   width: 100%;
   height: 100%;
   background: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
