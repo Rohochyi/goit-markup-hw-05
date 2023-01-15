@@ -628,6 +628,15 @@ ul {
   background: var(--acent-color);
 }
 
-.icon-vector:hover {
-  background-color: #31d0aa;
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--click-color);
+  fill: var(--second-color);
+}
+
+.icon-vector:hover,
+.icon-vector:focus {
+  background-color:var(--click-color);
+  fill: var(--second-color);
 }
