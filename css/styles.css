@@ -60,6 +60,7 @@ ul {
 }
 
 .link {
+  position: relative;
   text-decoration: none;
   display: inline-block;
 }
@@ -113,15 +114,16 @@ ul {
   color: var(--brand-color);
 }
 
-.current::after {
-  position: relative;
+.link.current::after {
   content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   display: block;
-  width: auto;
+  width: 100%;
   height: 4px;
-  background-color: var(--click-color);
   border-radius: 2px;
-  ;
+  background-color: var(--click-color);
 }
 
 .header-logo {
@@ -586,6 +588,12 @@ ul {
 
 .modal-close {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
   top: 24px;
   right: 24px;
   background: var(--acent-color);
