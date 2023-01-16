@@ -71,8 +71,8 @@ img {
 }
 
 .header {
-  height: 76px;
-  border-bottom: 1px solid var(--acent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -479,7 +479,6 @@ img {
 .portfolio-item {
   position: relative;
   width: 360px;
-  border: 1px solid var(--acent-color);
   margin-bottom: 48px;
 }
 
@@ -519,6 +518,8 @@ img {
 
 .container-txt {
   padding: 32px 16px;
+  border: 1px solid var(--acent-color);
+border-top: none;
 }
 
 .portfolio-text {
