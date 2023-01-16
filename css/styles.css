@@ -646,8 +646,8 @@ ul {
   fill: var(--second-color);
 }
 
-.icon-vector:hover,
-.icon-vector:focus {
+.modal-close:hover .icon-vector,
+.modal-close:focus .icon-vector {
   background-color: var(--click-color);
   fill: var(--second-color);
 }
