@@ -67,6 +67,7 @@ ul {
 }
 
 .header {
+  height: 76px;
   border-bottom: 1px solid var(--acent-color);
 }
 
@@ -120,8 +121,7 @@ ul {
 .link.current::after {
   content: "";
   position: absolute;
-  /* left: 0; */
-  bottom: -1px;
+  bottom: 0px;
   display: block;
   width: 100%;
   height: 4px;
@@ -632,12 +632,14 @@ ul {
   background: var(--acent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .icon-vector {
   width: 8px;
   height: 8px;
   background: var(--acent-color);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .modal-close:hover,
