@@ -453,8 +453,8 @@ ul {
 
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-  box-shadow: 250ms var(--timing-function);
+    border-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .btn:hover,
@@ -514,7 +514,7 @@ ul {
   padding-left: 16px;
 }
 
-.container-txt{
+.container-txt {
   padding-top: 32px;
 }
 
@@ -679,7 +679,8 @@ ul {
   background: var(--brand-color);
   padding: 40px 32px;
 }
-.portfolio-link:hover .overley-card {
+.portfolio-link:hover .overley-card,
+.portfolio-link:focus .overley-card {
   transform: translateY(-100%);
 }
 
@@ -691,4 +692,3 @@ ul {
   left: 0;
   transform: translateY(-100%);
 }
-
